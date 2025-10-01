@@ -30,28 +30,6 @@ public class Main {
       System.out.println("Comparing Scroll 1 to Scroll 2: " + scroll1.compareTo(scroll2));
       System.out.println("Comparing Scroll 2 to Scroll 1: " + scroll2.compareTo(scroll1));
 
-      // *** MATH CLASS METHODS ***
-      System.out.println("\n--- MATH CLASS ---");
-
-      // HINT: try running the program multiple times...
-      double rand = Math.random();
-      System.out.println("Here's a random number: " + rand);
-      double biggerRand = Math.random() * 500;
-      System.out.println("Here's a bigger random number: " + biggerRand);
-      int randInt = (int) (Math.random() * 100 + 1);
-      System.out.println("Here's a random whole number: " + randInt);
-
-      double absoluteD = Math.abs(-3.14);
-      System.out.println("Absolute value of -3.14 is: " + absoluteD);
-      int absoluteI = Math.abs(-3);
-      System.out.println("Absolute value of -3 is: " + absoluteI);
-
-      double cubed = Math.pow(randInt, 3);
-      System.out.println(randInt + " to the 3rd power is: " + cubed);
-
-      double squareRoot = Math.sqrt(2500);
-      System.out.println("Square root of 2500 is: " + squareRoot);
-
       
    }
 }
