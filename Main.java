@@ -2,22 +2,32 @@ public class Main {
 
    public static void main(String []args) {
 
-      // *** STRING CLASS METHODS ***
-      System.out.println("--- STRING CLASS ---");
+      /*  CODECOLLAB HINT: I use spacing between lines of code intentionally 
+       *  to help you isolate a section to focus on for your discussion post! 
+       */
+
+      // *** STRING CREATION & CONCATENATION ***
+      System.out.println("--- STRINGS ---");
 
       String scroll1 = "The treasure lies beyond the mountains.";
       String scroll2 = "Beware of the dragon's lair!";
-      String secretMessage = "The treasure lies beyond the mountains.";
+      String secretMessage = new String("The treasure lies beyond the mountains.");
       
       System.out.println("📜 Scroll 1 says: " + scroll1);
-      int lengthScroll1 = scroll1.length();
-      System.out.println(lengthScroll1);
-
       System.out.println("📜 Scroll 2 says: " + scroll2);
-      System.out.println(scroll2.length());
 
-      String keyPhrase = scroll1.substring(18, 38);
-      System.out.println("\n Key phrase from Scroll 1: " + keyPhrase); 
+      // *** STRING CLASS METHODS ***
+      System.out.println("\n--- STRING METHODS ---");
+
+      int lengthScroll1 = scroll1.length();
+      System.out.print(lengthScroll1);
+      System.out.println(" characters in Scroll 1");
+
+      System.out.print( scroll2.length() );
+      System.out.println(" characters in Scroll 2");
+
+      String location = scroll1.substring(18, 38);
+      System.out.println("\n Location from Scroll 1: " + location); 
 
       String warning = scroll2.substring(14);
       System.out.println(" Hidden warning in Scroll 2: " + warning);
@@ -34,6 +44,17 @@ public class Main {
       System.out.println("\n Comparing Scroll 1 to Scroll 2: " + scroll1.compareTo(scroll2));
       System.out.println(" Comparing Scroll 2 to Scroll 1: " + scroll2.compareTo(scroll1));
 
+      // CHALLENGE SECTION: Mixing up methods...
+      System.out.println("\n--- CHALLENGE SECTION ---");
+
+      String scroll3 = "Legends claim the treasure has magic abilities...";
+      System.out.println("📜 Scroll 3 says: " + scroll3);
+
+      int magicIndex = scroll3.indexOf("magic");
+      int magicLength = "magic".length();
+      String magicWord = scroll3.substring(magicIndex, magicIndex + magicLength);
+
+      System.out.println("🪄  Special word: " + magicWord.toUpperCase() );
       
    }
 }
